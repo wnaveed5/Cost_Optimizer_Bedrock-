@@ -5,7 +5,7 @@
 
 set -e
 
-echo "🚀 Setting up AI-Driven Cost Optimization Agent..."
+echo "Setting up AI-Driven Cost Optimization Agent..."
 
 # Colors for output
 RED='\033[0;31m'
@@ -197,7 +197,7 @@ create_deployment_scripts() {
 
 set -e
 
-echo "🚀 Deploying AI-Driven Cost Optimization Agent..."
+echo "Deploying AI-Driven Cost Optimization Agent..."
 
 # Colors for output
 GREEN='\033[0;32m'
@@ -257,7 +257,7 @@ EOF
 
 set -e
 
-echo "🗑️  Destroying AI-Driven Cost Optimization Agent..."
+echo "Destroying AI-Driven Cost Optimization Agent..."
 
 # Colors for output
 RED='\033[0;31m'

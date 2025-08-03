@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
 import './Dashboard.css';
 
 // Mock data for demonstration
@@ -52,7 +52,7 @@ const mockMetrics = {
   memoryUtilization: 72
 };
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+
 
 const Dashboard = () => {
   const { data: costData, isLoading: costLoading } = useQuery('costData', () => {

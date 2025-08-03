@@ -7,27 +7,27 @@ const Sidebar = () => {
     {
       path: '/',
       label: 'Dashboard',
-      icon: '📊'
+      icon: 'D'
     },
     {
       path: '/cost-analysis',
       label: 'Cost Analysis',
-      icon: '💰'
+      icon: 'C'
     },
     {
       path: '/recommendations',
       label: 'AI Recommendations',
-      icon: '🤖'
+      icon: 'A'
     },
     {
       path: '/metrics',
       label: 'Metrics',
-      icon: '📈'
+      icon: 'M'
     },
     {
       path: '/settings',
       label: 'Settings',
-      icon: '⚙️'
+      icon: 'S'
     }
   ];
 

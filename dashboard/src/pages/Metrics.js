@@ -193,7 +193,7 @@ const Metrics = () => {
         </div>
         <div className="alerts-list">
           <div className="alert-item warning">
-            <div className="alert-icon">⚠️</div>
+            <div className="alert-icon">!</div>
             <div className="alert-content">
               <h4>High CPU Usage</h4>
               <p>Node node-1 is experiencing high CPU utilization (82%)</p>
@@ -205,7 +205,7 @@ const Metrics = () => {
           </div>
           
           <div className="alert-item info">
-            <div className="alert-icon">ℹ️</div>
+            <div className="alert-icon">i</div>
             <div className="alert-content">
               <h4>Memory Usage Normal</h4>
               <p>All nodes are operating within normal memory ranges</p>
@@ -217,7 +217,7 @@ const Metrics = () => {
           </div>
           
           <div className="alert-item success">
-            <div className="alert-icon">✅</div>
+            <div className="alert-icon">✓</div>
             <div className="alert-content">
               <h4>Optimization Applied</h4>
               <p>Pod scaling recommendation applied successfully</p>
