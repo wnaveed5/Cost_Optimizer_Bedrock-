@@ -266,4 +266,17 @@ cd dashboard
 
 - **Automation**: 90% of optimization actions executed automatically
 
-<img width="1468" height="701" alt="Screenshot 2025-08-03 at 5 38 23 PM" src="https://github.com/user-attachments/assets/f84f91f4-45ca-453b-a986-a960a171ed2a" />
+
+## Screenshots
+
+Here are some screenshots of the Cost Optimization Dashboard in action:
+
+### Dashboard Overview
+![Dashboard Overview](Screenshot 2025-08-03 at 5.38.23 PM.png)
+
+### Cost Analysis
+![Cost Analysis](Screenshot 2025-08-03 at 5.38.50 PM.png)
+
+### AI Recommendations
+![AI Recommendations](Screenshot 2025-08-03 at 5.39.27 PM.png)
+
