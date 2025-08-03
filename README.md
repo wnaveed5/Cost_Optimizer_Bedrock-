@@ -269,14 +269,4 @@ cd dashboard
 
 ## Screenshots
 
-Here are some screenshots of the Cost Optimization Dashboard in action:
-
-### Dashboard Overview
-![Dashboard Overview](Screenshot 2025-08-03 at 5.38.23 PM.png)
-
-### Cost Analysis
-![Cost Analysis](Screenshot 2025-08-03 at 5.38.50 PM.png)
-
-### AI Recommendations
-![AI Recommendations](Screenshot 2025-08-03 at 5.39.27 PM.png)
 
