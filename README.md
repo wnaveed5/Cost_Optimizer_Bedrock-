@@ -266,10 +266,4 @@ cd dashboard
 
 - **Automation**: 90% of optimization actions executed automatically
 
-<img width="1470" height="706" alt="Screenshot 2025-08-03 at 5 39 27 PM" src="https://github.com/user-attachments/assets/b4369df1-537f-4cc0-8ac7-8c2d04616535" />
-<img width="1467" height="703" alt="Screenshot 2025-08-03 at 5 38 50 PM" src="https://github.com/user-attachments/assets/48098024-0530-4f6d-8535-200f93d3e377" />
-<img width="1468" height="701" alt="Screenshot 2025-08-03 at 5 38 23 PM" src="https://github.com/user-attachments/assets/6ab1e738-af50-46b9-b286-4e9343dfedbe" />
-
-<img width="1467" height="703" alt="Screenshot 2025-08-03 at 5 38 50 PM" src="https://github.com/user-attachments/assets/071bdefc-4928-4f38-bcfc-2c3e31b9b4d2" />
-
-<img width="1467" height="703" alt="Screenshot 2025-08-03 at 5 38 50 PM" src="https://github.com/user-attachments/assets/e2d3a6db-ada5-4269-b420-c33df893d7a4" />
+<img width="1468" height="701" alt="Screenshot 2025-08-03 at 5 38 23 PM" src="https://github.com/user-attachments/assets/f84f91f4-45ca-453b-a986-a960a171ed2a" />
