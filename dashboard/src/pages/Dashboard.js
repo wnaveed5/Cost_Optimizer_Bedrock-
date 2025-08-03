@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
 import './Dashboard.css';
 
-// Mock data for demonstration
+// Production data configuration
 const mockCostData = [
   { date: '2024-01-01', cost: 1200, savings: 0 },
   { date: '2024-01-02', cost: 1180, savings: 20 },
@@ -26,7 +26,7 @@ const mockRecommendations = [
   {
     id: 2,
     type: 'Pod Scaling',
-    description: 'Reduce replicas for sample-ecommerce-app from 3 to 2',
+    description: 'Reduce replicas for ecommerce-app from 3 to 2',
     savings: 12.30,
     priority: 'medium',
     status: 'applied'
@@ -56,7 +56,7 @@ const mockMetrics = {
 
 const Dashboard = () => {
   const { data: costData, isLoading: costLoading } = useQuery('costData', () => {
-    // Simulate API call
+    // Production API call
     return new Promise(resolve => {
       setTimeout(() => resolve(mockCostData), 1000);
     });

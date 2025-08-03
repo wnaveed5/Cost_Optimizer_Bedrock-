@@ -19,7 +19,7 @@ const mockRecommendations = [
   {
     id: 2,
     type: 'Pod Scaling',
-    description: 'Reduce replicas for sample-ecommerce-app from 3 to 2',
+    description: 'Reduce replicas for ecommerce-app from 3 to 2',
     savings: 12.30,
     priority: 'medium',
     status: 'applied',

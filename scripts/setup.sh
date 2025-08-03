@@ -106,17 +106,17 @@ setup_node_env() {
     cd ..
 }
 
-# Setup sample workload
-setup_sample_workload() {
-    print_status "Setting up sample workload..."
-    
-    cd sample-workload
-    
-    # Install dependencies
-    npm install
-    
-    print_success "Sample workload setup complete!"
-    cd ..
+# Setup production workload
+setup_production_workload() {
+  print_status "Setting up production workload..."
+  
+  cd sample-workload
+  
+  # Install dependencies
+  npm install
+  
+  print_success "Production workload setup complete!"
+  cd ..
 }
 
 # Create necessary directories
@@ -177,9 +177,9 @@ build_docker_images() {
     docker build -t cost-optimizer-agent:latest .
     cd ..
     
-    # Build sample workload image
+    # Build production workload image
     cd sample-workload
-    docker build -t sample-ecommerce-app:latest .
+    docker build -t ecommerce-app:latest .
     cd ..
     
     print_success "Docker images built successfully!"
@@ -228,8 +228,8 @@ AWS_REGION=$(terraform -chdir=infrastructure output -raw aws_region)
 print_status "Configuring kubectl..."
 aws eks update-kubeconfig --region $AWS_REGION --name $CLUSTER_NAME
 
-# Deploy sample workload
-print_status "Deploying sample workload..."
+# Deploy production workload
+print_status "Deploying production workload..."
 kubectl apply -f sample-workload/k8s/
 
 # Deploy AI agent
@@ -307,7 +307,7 @@ main() {
     create_config_files
     setup_python_env
     setup_node_env
-    setup_sample_workload
+    setup_production_workload
     build_docker_images
     create_deployment_scripts
     

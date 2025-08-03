@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample-ecommerce-app
+  name: ecommerce-app
   namespace: default
   labels:
-    app: sample-ecommerce-app
+    app: ecommerce-app
     version: v1
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: sample-ecommerce-app
+      app: ecommerce-app
   template:
     metadata:
       labels:
-        app: sample-ecommerce-app
+        app: ecommerce-app
         version: v1
     spec:
       containers:

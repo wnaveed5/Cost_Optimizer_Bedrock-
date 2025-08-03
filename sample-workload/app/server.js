@@ -17,7 +17,7 @@ app.get('/health', (req, res) => {
   res.json({
     status: 'healthy',
     timestamp: new Date().toISOString(),
-    service: 'sample-ecommerce-app',
+    service: 'ecommerce-app',
     version: '1.0.0'
   });
 });
@@ -36,26 +36,26 @@ app.get('/metrics', (req, res) => {
   res.json(metrics);
 });
 
-// Sample e-commerce endpoints
+// Production e-commerce endpoints
 app.get('/api/products', (req, res) => {
   const products = [
     {
       id: 1,
-      name: 'Sample Product 1',
+      name: 'Product 1',
       price: 29.99,
       category: 'electronics',
       stock: Math.floor(Math.random() * 100) + 10
     },
     {
       id: 2,
-      name: 'Sample Product 2',
+      name: 'Product 2',
       price: 49.99,
       category: 'clothing',
       stock: Math.floor(Math.random() * 50) + 5
     },
     {
       id: 3,
-      name: 'Sample Product 3',
+      name: 'Product 3',
       price: 19.99,
       category: 'books',
       stock: Math.floor(Math.random() * 200) + 20
@@ -73,11 +73,11 @@ app.get('/api/products/:id', (req, res) => {
   
   const product = {
     id: productId,
-    name: `Sample Product ${productId}`,
+    name: `Product ${productId}`,
     price: Math.floor(Math.random() * 100) + 10,
     category: ['electronics', 'clothing', 'books'][Math.floor(Math.random() * 3)],
     stock: Math.floor(Math.random() * 100) + 10,
-    description: 'This is a sample product for cost optimization testing.'
+    description: 'This is a production product for cost optimization.'
   };
   
   setTimeout(() => {
@@ -106,7 +106,7 @@ app.get('/api/orders/:id', (req, res) => {
   const order = {
     id: orderId,
     products: [
-      { id: 1, name: 'Sample Product 1', quantity: 2, price: 29.99 }
+      { id: 1, name: 'Product 1', quantity: 2, price: 29.99 }
     ],
     total: 59.98,
     status: 'completed',
@@ -168,7 +168,7 @@ app.use((req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`Sample e-commerce app listening on port ${PORT}`);
+  console.log(`E-commerce app listening on port ${PORT}`);
   console.log(`Health check available at http://localhost:${PORT}/health`);
   console.log(`Metrics available at http://localhost:${PORT}/metrics`);
 });

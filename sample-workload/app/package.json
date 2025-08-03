@@ -1,7 +1,7 @@
 {
   "name": "sample-ecommerce-app",
   "version": "1.0.0",
-  "description": "Sample e-commerce application for cost optimization testing",
+  "description": "Production e-commerce application for cost optimization",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

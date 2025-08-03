@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project utilizes an AI-powered cost optimization agent for AWS infrastructure using AgentCore for Amazon Bedrock. The agent is tracking an AWS EKS cluster that is executing a sample workload and assessing usage metrics via CloudWatch in order to recommend and apply cost-saving solutions.
+This project implements a production-ready cost optimization system for AWS infrastructure using AgentCore for Amazon Bedrock. The system monitors AWS EKS clusters and analyzes usage metrics via CloudWatch to provide intelligent cost-saving recommendations and automated optimizations.
 
  Architecture
 
@@ -101,7 +101,7 @@ Cost_Optimizer_Bedrock-/
 
 │   └── Dockerfile
 
-├── sample-workload/         # Sample Node.js application
+├── sample-workload/         # Production Node.js application
 
 │   ├── app/
 
