@@ -1,0 +1,203 @@
+.settings-page {
+  padding: 0;
+}
+
+/* Settings tabs */
+.settings-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.tab.active {
+  color: #000;
+  border-bottom-color: #000;
+  background-color: #f0f0f0;
+}
+
+/* Settings content */
+.settings-content {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  padding: 2rem;
+}
+
+.settings-section {
+  margin-bottom: 2rem;
+}
+
+.settings-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.setting-group {
+  margin-bottom: 1.5rem;
+}
+
+.setting-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.setting-group input[type="text"],
+.setting-group input[type="number"],
+.setting-group input[type="email"],
+.setting-group input[type="url"],
+.setting-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  font-size: 0.875rem;
+  background-color: white;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+
+.setting-group input:focus,
+.setting-group select:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.setting-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+  accent-color: #000;
+}
+
+.setting-description {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+/* Slider */
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider-container input[type="range"] {
+  flex: 1;
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-container input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.slider-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Checkbox group */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+  accent-color: #000;
+}
+
+/* Settings actions */
+.settings-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .settings-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .tab {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .settings-content {
+    padding: 1rem;
+  }
+  
+  .settings-actions {
+    flex-direction: column;
+  }
+  
+  .settings-actions .btn {
+    width: 100%;
+  }
+} 
